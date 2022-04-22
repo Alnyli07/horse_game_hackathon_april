@@ -1,0 +1,54 @@
+{
+	"components": [
+		{
+			"className": ".sf-gridViewItem",
+			"id": "2b54-49b1-ce74-bf68",
+			"props": {
+				"children": [
+					"3dad-3aa0-228d-78b8"
+				],
+				"name": "gridViewItem1",
+				"parent": "57f4-201f-4bfc-5fc6"
+			},
+			"ref": null,
+			"source": {
+				"page": "__library__"
+			},
+			"type": "GridViewItem",
+			"userProps": {
+				"flexProps": {
+					"alignItems": "STRETCH",
+					"flexDirection": "COLUMN",
+					"alignContent": "STRETCH",
+					"justifyContent": "CENTER"
+				},
+				"left": 92.59,
+				"top": 448.15
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "3dad-3aa0-228d-78b8",
+			"props": {
+				"children": [],
+				"name": "label1",
+				"parent": "2b54-49b1-ce74-bf68",
+				"text": "label1",
+				"usePageVariable": true
+			},
+			"ref": null,
+			"source": {
+				"page": "__library__"
+			},
+			"type": "Label",
+			"userProps": {
+				"flexProps": {
+					"alignSelf": "AUTO"
+				},
+				"text": "label1",
+				"textAlignment": "MIDCENTER",
+				"usePageVariable": true
+			}
+		}
+	]
+}

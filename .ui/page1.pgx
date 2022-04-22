@@ -1,0 +1,117 @@
+{
+	"components": [
+		{
+			"className": ".sf-page #page1",
+			"id": "e891b86d",
+			"initialized": true,
+			"props": {
+				"children": [
+					"42b807d1",
+					"b7d28cff",
+					"0f59-6014-0dda-b2c3"
+				],
+				"isRemovable": true,
+				"name": "page1",
+				"orientation": "PORTRAIT",
+				"parent": null,
+				"safeAreaEnabled": true
+			},
+			"type": "Page",
+			"userProps": {
+				"orientation": "PORTRAIT",
+				"safeAreaEnabled": true
+			},
+			"version": "6.15.1"
+		},
+		{
+			"className": ".sf-statusBar",
+			"id": "42b807d1",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "statusBar",
+				"parent": "e891b86d"
+			},
+			"type": "StatusBar",
+			"userProps": {}
+		},
+		{
+			"className": ".sf-headerBar",
+			"id": "b7d28cff",
+			"props": {
+				"children": [],
+				"isRemovable": false,
+				"name": "headerBar",
+				"parent": "e891b86d",
+				"title": "Page1"
+			},
+			"type": "HeaderBar",
+			"userProps": {
+				"title": "Page1"
+			}
+		},
+		{
+			"className": ".sf-gridView",
+			"id": "0f59-6014-0dda-b2c3",
+			"props": {
+				"children": [
+					"9eee-ed8f-ca37-5645"
+				],
+				"name": "gridView1",
+				"parent": "e891b86d",
+				"usePageVariable": true
+			},
+			"ref": null,
+			"type": "GridView",
+			"userProps": {
+				"backgroundColor": "rgba( 175, 165, 165, 1 )",
+				"flexProps": {
+					"flexGrow": 1
+				},
+				"height": null,
+				"layoutManager": {
+					"spanCount": 2,
+					"scrollDirection": "VERTICAL"
+				},
+				"testId": "p-PYGAXVO",
+				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-gridViewItem",
+			"hiddenComponent": false,
+			"id": "9eee-ed8f-ca37-5645",
+			"props": {
+				"children": [],
+				"name": "gridViewItem1",
+				"parent": "0f59-6014-0dda-b2c3"
+			},
+			"ref": null,
+			"source": {
+				"page": "__library__",
+				"type": "gridViewItem1",
+				"id": "2b54-49b1-ce74-bf68"
+			},
+			"type": "GridViewItem",
+			"userProps": {
+				"backgroundColor": "rgba( 208, 2, 27, 1 )",
+				"flex": {
+					"alignItems": 4,
+					"flexDirection": 0,
+					"alignContent": 4,
+					"justifyContent": 1,
+					"positionType": 0
+				},
+				"flexProps": {
+					"alignItems": "STRETCH",
+					"flexDirection": "COLUMN",
+					"alignContent": "STRETCH",
+					"justifyContent": "CENTER",
+					"positionType": "RELATIVE"
+				},
+				"left": 0,
+				"top": 0
+			}
+		}
+	]
+}

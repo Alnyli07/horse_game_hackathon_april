@@ -27,7 +27,8 @@ export default class FlBoardItem extends FlBoardItemDesign {
 
     addKnight(type: KnightType = 'black') {
         if (this.imageView) {
-            this.removeChild(this.imageView);
+            this.imageView.dispatch(updateUserStyle({ image: KNIGHT_IMAGES[type] }));
+            return;
         }
         this.imageView = new StyleableImageView();
         this.addChild(this.imageView, 'knight_imageview',

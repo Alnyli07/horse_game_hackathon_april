@@ -9,7 +9,8 @@
 					"42b807d1",
 					"b7d28cff",
 					"1d09-ddb3-a0b9-3518",
-					"9e2c-e426-5e50-12b0"
+					"1d72-f517-474a-2cff",
+					"912e-d54c-678a-2d7b"
 				],
 				"isRemovable": true,
 				"name": "page1",
@@ -107,14 +108,14 @@
 		},
 		{
 			"className": ".sf-flexLayout #page1-flexlayout",
-			"id": "9e2c-e426-5e50-12b0",
+			"id": "1d72-f517-474a-2cff",
 			"oldName": "flexLayout1_1",
 			"props": {
 				"children": [
-					"a1ad-9950-97eb-2a5b",
-					"29eb-cf42-1f18-65b7",
-					"4dda-792f-45b3-2c1e",
-					"f148-4a1e-f6d7-4787"
+					"22bd-9ecd-68d3-fc6f",
+					"262a-3bb6-a4dc-e23b",
+					"ba04-9506-9978-3d73",
+					"9d38-360d-7989-2697"
 				],
 				"name": "flBoard",
 				"parent": "e891b86d",
@@ -126,21 +127,23 @@
 					"flexGrow": null
 				},
 				"height": 300,
+				"left": 0,
+				"top": 0,
 				"usePageVariable": true
 			}
 		},
 		{
 			"className": ".sf-flexLayout .app_board_row_item_layout",
-			"id": "a1ad-9950-97eb-2a5b",
+			"id": "22bd-9ecd-68d3-fc6f",
 			"props": {
 				"children": [
-					"1879-9f32-0ec9-539a",
-					"fd80-a205-3f3d-691b",
-					"70b9-2626-5fd6-8b61",
-					"5089-f21f-3a0e-592f"
+					"4900-5096-bf74-d3e1",
+					"761f-4501-e33f-e4da",
+					"1577-edf1-d740-817d",
+					"9249-cdfc-0332-ff03"
 				],
 				"name": "flexLayout1",
-				"parent": "9e2c-e426-5e50-12b0"
+				"parent": "1d72-f517-474a-2cff"
 			},
 			"type": "FlexLayout",
 			"userProps": {
@@ -154,11 +157,11 @@
 		},
 		{
 			"className": ".sf-flexLayout",
-			"id": "1879-9f32-0ec9-539a",
+			"id": "4900-5096-bf74-d3e1",
 			"props": {
 				"children": [],
 				"name": "flexLayout1",
-				"parent": "a1ad-9950-97eb-2a5b"
+				"parent": "22bd-9ecd-68d3-fc6f"
 			},
 			"type": "FlexLayout",
 			"userProps": {
@@ -171,11 +174,11 @@
 		},
 		{
 			"className": ".sf-flexLayout .app_board_row_item_layout",
-			"id": "fd80-a205-3f3d-691b",
+			"id": "761f-4501-e33f-e4da",
 			"props": {
 				"children": [],
 				"name": "flexLayout2",
-				"parent": "a1ad-9950-97eb-2a5b"
+				"parent": "22bd-9ecd-68d3-fc6f"
 			},
 			"type": "FlexLayout",
 			"userProps": {
@@ -188,11 +191,11 @@
 		},
 		{
 			"className": ".sf-flexLayout",
-			"id": "70b9-2626-5fd6-8b61",
+			"id": "1577-edf1-d740-817d",
 			"props": {
 				"children": [],
 				"name": "flexLayout3",
-				"parent": "a1ad-9950-97eb-2a5b"
+				"parent": "22bd-9ecd-68d3-fc6f"
 			},
 			"type": "FlexLayout",
 			"userProps": {
@@ -205,11 +208,11 @@
 		},
 		{
 			"className": ".sf-flexLayout",
-			"id": "5089-f21f-3a0e-592f",
+			"id": "9249-cdfc-0332-ff03",
 			"props": {
 				"children": [],
 				"name": "flexLayout4",
-				"parent": "a1ad-9950-97eb-2a5b"
+				"parent": "22bd-9ecd-68d3-fc6f"
 			},
 			"type": "FlexLayout",
 			"userProps": {
@@ -222,16 +225,16 @@
 		},
 		{
 			"className": ".sf-flexLayout",
-			"id": "29eb-cf42-1f18-65b7",
+			"id": "262a-3bb6-a4dc-e23b",
 			"props": {
 				"children": [
-					"98fc-e7df-ad73-4bc9",
-					"6f80-756e-69fb-32ec",
-					"6dc5-7a29-8bbf-0791",
-					"fb99-beed-939d-e667"
+					"0d27-b0a9-689e-c3af",
+					"b14f-776a-4952-aabe",
+					"65d5-9276-4230-3a97",
+					"99f5-ba6d-c531-0ea7"
 				],
 				"name": "flexLayout4",
-				"parent": "9e2c-e426-5e50-12b0"
+				"parent": "1d72-f517-474a-2cff"
 			},
 			"type": "FlexLayout",
 			"userProps": {
@@ -245,60 +248,60 @@
 		},
 		{
 			"className": ".sf-flexLayout .board_layout_2",
-			"id": "98fc-e7df-ad73-4bc9",
+			"id": "0d27-b0a9-689e-c3af",
 			"props": {
 				"children": [],
 				"name": "flexLayout4",
-				"parent": "29eb-cf42-1f18-65b7"
+				"parent": "262a-3bb6-a4dc-e23b"
 			},
 			"type": "FlexLayout",
 			"userProps": {}
 		},
 		{
 			"className": ".sf-flexLayout .board_layout_1",
-			"id": "6f80-756e-69fb-32ec",
+			"id": "b14f-776a-4952-aabe",
 			"props": {
 				"children": [],
 				"name": "flexLayout5",
-				"parent": "29eb-cf42-1f18-65b7"
+				"parent": "262a-3bb6-a4dc-e23b"
 			},
 			"type": "FlexLayout",
 			"userProps": {}
 		},
 		{
 			"className": ".sf-flexLayout .board_layout_2",
-			"id": "6dc5-7a29-8bbf-0791",
+			"id": "65d5-9276-4230-3a97",
 			"props": {
 				"children": [],
 				"name": "flexLayout6",
-				"parent": "29eb-cf42-1f18-65b7"
+				"parent": "262a-3bb6-a4dc-e23b"
 			},
 			"type": "FlexLayout",
 			"userProps": {}
 		},
 		{
 			"className": ".sf-flexLayout .board_layout_1",
-			"id": "fb99-beed-939d-e667",
+			"id": "99f5-ba6d-c531-0ea7",
 			"props": {
 				"children": [],
 				"name": "flexLayout7",
-				"parent": "29eb-cf42-1f18-65b7"
+				"parent": "262a-3bb6-a4dc-e23b"
 			},
 			"type": "FlexLayout",
 			"userProps": {}
 		},
 		{
 			"className": ".sf-flexLayout",
-			"id": "4dda-792f-45b3-2c1e",
+			"id": "ba04-9506-9978-3d73",
 			"props": {
 				"children": [
-					"e41a-79a8-752b-5e54",
-					"a11f-6511-6786-ee5e",
-					"77d3-cd38-d6da-1050",
-					"1257-3857-d91c-2c44"
+					"dfff-0efc-562a-385a",
+					"785a-262b-adbc-366c",
+					"42b7-0c90-f8e2-dcf0",
+					"c147-16d1-df93-b168"
 				],
 				"name": "flexLayout7",
-				"parent": "9e2c-e426-5e50-12b0"
+				"parent": "1d72-f517-474a-2cff"
 			},
 			"type": "FlexLayout",
 			"userProps": {
@@ -312,11 +315,11 @@
 		},
 		{
 			"className": ".sf-flexLayout",
-			"id": "e41a-79a8-752b-5e54",
+			"id": "dfff-0efc-562a-385a",
 			"props": {
 				"children": [],
 				"name": "flexLayout7",
-				"parent": "4dda-792f-45b3-2c1e"
+				"parent": "ba04-9506-9978-3d73"
 			},
 			"type": "FlexLayout",
 			"userProps": {
@@ -329,11 +332,11 @@
 		},
 		{
 			"className": ".sf-flexLayout .app_board_item",
-			"id": "a11f-6511-6786-ee5e",
+			"id": "785a-262b-adbc-366c",
 			"props": {
 				"children": [],
 				"name": "flexLayout8",
-				"parent": "4dda-792f-45b3-2c1e"
+				"parent": "ba04-9506-9978-3d73"
 			},
 			"type": "FlexLayout",
 			"userProps": {
@@ -346,11 +349,11 @@
 		},
 		{
 			"className": ".sf-flexLayout",
-			"id": "77d3-cd38-d6da-1050",
+			"id": "42b7-0c90-f8e2-dcf0",
 			"props": {
 				"children": [],
 				"name": "flexLayout9",
-				"parent": "4dda-792f-45b3-2c1e"
+				"parent": "ba04-9506-9978-3d73"
 			},
 			"type": "FlexLayout",
 			"userProps": {
@@ -363,11 +366,11 @@
 		},
 		{
 			"className": ".sf-flexLayout",
-			"id": "1257-3857-d91c-2c44",
+			"id": "c147-16d1-df93-b168",
 			"props": {
 				"children": [],
 				"name": "flexLayout10",
-				"parent": "4dda-792f-45b3-2c1e"
+				"parent": "ba04-9506-9978-3d73"
 			},
 			"type": "FlexLayout",
 			"userProps": {
@@ -380,16 +383,16 @@
 		},
 		{
 			"className": ".sf-flexLayout",
-			"id": "f148-4a1e-f6d7-4787",
+			"id": "9d38-360d-7989-2697",
 			"props": {
 				"children": [
-					"6d56-798d-9ba7-f0b3",
-					"39b7-6185-4692-b133",
-					"8e48-a3bf-abd6-86bb",
-					"3052-583b-2a9c-9eee"
+					"4b5d-eae7-da34-73d6",
+					"58a6-85a3-66ca-0b0e",
+					"b577-2cf1-5ee3-7d77",
+					"37fd-0eb4-6281-494f"
 				],
 				"name": "flexLayout10",
-				"parent": "9e2c-e426-5e50-12b0"
+				"parent": "1d72-f517-474a-2cff"
 			},
 			"type": "FlexLayout",
 			"userProps": {
@@ -403,11 +406,11 @@
 		},
 		{
 			"className": ".sf-flexLayout",
-			"id": "6d56-798d-9ba7-f0b3",
+			"id": "4b5d-eae7-da34-73d6",
 			"props": {
 				"children": [],
 				"name": "flexLayout10",
-				"parent": "f148-4a1e-f6d7-4787"
+				"parent": "9d38-360d-7989-2697"
 			},
 			"type": "FlexLayout",
 			"userProps": {
@@ -420,11 +423,11 @@
 		},
 		{
 			"className": ".sf-flexLayout",
-			"id": "39b7-6185-4692-b133",
+			"id": "58a6-85a3-66ca-0b0e",
 			"props": {
 				"children": [],
 				"name": "flexLayout11",
-				"parent": "f148-4a1e-f6d7-4787"
+				"parent": "9d38-360d-7989-2697"
 			},
 			"type": "FlexLayout",
 			"userProps": {
@@ -437,11 +440,11 @@
 		},
 		{
 			"className": ".sf-flexLayout",
-			"id": "8e48-a3bf-abd6-86bb",
+			"id": "b577-2cf1-5ee3-7d77",
 			"props": {
 				"children": [],
 				"name": "flexLayout12",
-				"parent": "f148-4a1e-f6d7-4787"
+				"parent": "9d38-360d-7989-2697"
 			},
 			"type": "FlexLayout",
 			"userProps": {
@@ -454,11 +457,11 @@
 		},
 		{
 			"className": ".sf-flexLayout",
-			"id": "3052-583b-2a9c-9eee",
+			"id": "37fd-0eb4-6281-494f",
 			"props": {
 				"children": [],
 				"name": "flexLayout13",
-				"parent": "f148-4a1e-f6d7-4787"
+				"parent": "9d38-360d-7989-2697"
 			},
 			"type": "FlexLayout",
 			"userProps": {
@@ -467,6 +470,36 @@
 				},
 				"height": null,
 				"width": null
+			}
+		},
+		{
+			"className": ".app_board_item",
+			"hiddenComponent": false,
+			"id": "912e-d54c-678a-2d7b",
+			"oldName": "flBoardItem",
+			"props": {
+				"children": [],
+				"name": "flAnimateBoardItem",
+				"parent": "e891b86d",
+				"usePageVariable": true
+			},
+			"source": {
+				"page": "__library__",
+				"type": "flBoardItem",
+				"id": "936e-e468-12a9-048a"
+			},
+			"type": "FlexLayout",
+			"userProps": {
+				"flexProps": {
+					"positionType": "ABSOLUTE",
+					"flexGrow": null
+				},
+				"height": 70,
+				"left": 0,
+				"top": 0,
+				"usePageVariable": true,
+				"visible": false,
+				"width": 70
 			}
 		}
 	]

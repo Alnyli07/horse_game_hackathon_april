@@ -8,6 +8,7 @@ import Screen from '@smartface/native/device/screen'
 import FlexLayout from '@smartface/native/ui/flexlayout';
 import FlBoardItem, { KnightType } from 'components/FlBoardItem';
 import { updateUserStyle } from 'lib/action';
+import Animator from '@smartface/native/ui/animator';
 
 class StyleableFlexLayout extends styleableContainerComponentMixin(FlexLayout) { }
 
@@ -21,6 +22,7 @@ export type BoardPosition = {
 }
 
 type GameInfo = {
+    itemSize: number;
     row: number;
     col: number;
     white: BoardPosition;
@@ -107,8 +109,32 @@ export default class Page1 extends Page1Design {
 
     }
 
-    private moveKnightAnimation(){
-        
+    private async moveKnightAnimation(type: KnightType, nextPos) {
+        const pos = this.gameInfo[type];
+        const knightItem = this.board[pos.x][pos.y];
+        const destItem = this.board[nextPos.x][nextPos.y];
+        const screnLoc = knightItem.getScreenLocation();
+        const destScrenLoc = destItem.getScreenLocation();
+        const itemSize = this.gameInfo.itemSize
+        console.log('Poses ', screnLoc, destScrenLoc, this.board[0][6].getScreenLocation());
+
+        this.flAnimateBoardItem.dispatch(updateUserStyle({ width: itemSize, height: itemSize, left: screnLoc.x, top: screnLoc.y - itemSize, visible: true }));
+        this.flAnimateBoardItem.addKnight(type);
+        this.flAnimateBoardItem.visible = true;
+        this.layout.applyLayout();
+        const animationRootView = System.OS === "iOS" ? this.layout : this.flAnimateBoardItem.parent;
+        return new Promise((resolve, reject) => {
+            Animator.animate(animationRootView as any, 1000, () => {
+                this.flAnimateBoardItem.left = destScrenLoc.x;
+                this.flAnimateBoardItem.top = destScrenLoc.y - itemSize;
+            }).complete(() => {
+                resolve(true);
+                console.warn('Complete ', this.flAnimateBoardItem.getScreenLocation(), this.flAnimateBoardItem.left, ' , ', this.flAnimateBoardItem.top);
+                this.flAnimateBoardItem.dispatch(updateUserStyle({ left: destScrenLoc.x, top: destScrenLoc.y, visible: false }));
+                this.flAnimateBoardItem.visible = false;
+                this.layout.applyLayout();
+            });
+        })
     }
 
     private getBestPosForComputer() {
@@ -146,10 +172,10 @@ export default class Page1 extends Page1Design {
                 this.startNewGame(this.gameInfo.row, this.gameInfo.col);
             } else {
                 this.lblStatus.text = 'Computer thinking..., be patient';
-                setTimeout(() => {
+                setTimeout(async () => {
                     //computer thinking...
                     this.gameInfo.hints.forEach(p => this.board[p.x][p.y].clearHint());
-                    this.moveNight(this.gameInfo[this.gameInfo.turn], nextPos, this.gameInfo.turn);
+                    await this.moveNight(this.gameInfo[this.gameInfo.turn], nextPos, this.gameInfo.turn);
                     this.turnToOtherPlayer();
                     this.playGame();
                 }, 1500);
@@ -164,7 +190,7 @@ export default class Page1 extends Page1Design {
         this.lblStatus.text = this.gameInfo.turn === 'white' ? 'Your turn.' : 'Computer turn.';
     }
 
-    onTouchEndedBoardItem = (x: number, y: number) => {
+    onTouchEndedBoardItem = async (x: number, y: number) => {
         if (this.gameInfo.turn !== 'white') {
             console.warn('Computer turn, wait your turn');
             return true;
@@ -173,7 +199,7 @@ export default class Page1 extends Page1Design {
         if (this.isPosibilityPos({ x, y })) {
             const isKnight = this.isKnightPos({ x, y });
             this.gameInfo.hints.forEach(p => this.board[p.x][p.y].clearHint());
-            this.moveNight(this.gameInfo[this.gameInfo.turn], { x, y }, this.gameInfo.turn);
+            await this.moveNight(this.gameInfo[this.gameInfo.turn], { x, y }, this.gameInfo.turn);
             if (isKnight) {
                 alert('Congrulations, you are winner!');
                 this.startNewGame(this.gameInfo.row, this.gameInfo.col);
@@ -249,6 +275,7 @@ export default class Page1 extends Page1Design {
     private drawGameBoard(row: number, col: number) {
         const maxWidth = Screen.width - PAGE_PADDING;
         const itemSize = maxWidth / col
+        this.gameInfo.itemSize = itemSize;
         console.info('Screen width: ', Screen.width, '  height:', Screen.height, {
             maxWidth,
             itemSize,
@@ -261,7 +288,7 @@ export default class Page1 extends Page1Design {
             Array.from({ length: col }, (_, i) => i).forEach(c => {
                 const flBoardItem = new StyleableFlBoardItem();
                 this.board[r][c] = flBoardItem;
-                flBoardItem.onTouchEnded = () => this.onTouchEndedBoardItem(r, c);
+                flBoardItem.onTouchEnded = () => this.onTouchEndedBoardItem(r, c) as any;
                 flRowItem.addChild(flBoardItem, `flrowitem_${c}`, `.app_board_item  ${this.getBoardItemClassname(r, c)}`);
             });
             flRowItem.applyLayout();
@@ -273,11 +300,12 @@ export default class Page1 extends Page1Design {
         this.layout.applyLayout();
     }
 
-    private moveNight(old: BoardPosition, newPos: BoardPosition, type: KnightType) {
+    private async moveNight(old: BoardPosition, newPos: BoardPosition, type: KnightType) {
         let item = this.board[old.x][old.y];
         item.addNoPlace();
         item = this.board[newPos.x][newPos.y];
         console.info('Move knight ', newPos, newPos.x, ' , ', newPos.y);
+        await this.moveKnightAnimation(type, newPos);
         if (!item.isFull) {
             item.clearHint();
             item.addKnight(type);

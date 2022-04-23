@@ -26,7 +26,7 @@
 			}
 		},
 		{
-			"className": ".sf-imageView .simple-gridviewItem-preview",
+			"className": ".sf-imageView .simple-gridviewItem-preview .app_board_item_image .app_board_item_hint",
 			"id": "58e6-e69e-a1c1-d4b9",
 			"props": {
 				"autoHeight": 343.4782608695652,

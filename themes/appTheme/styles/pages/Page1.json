@@ -1,0 +1,29 @@
+{
+  "#page1": {
+    "flexProps": {
+      "justifyContent": "FLEX_START"
+    },
+    "&-header": {
+      "&-layout": {
+        "flexProps": {
+          "alignItems": "CENTER",
+          "flexGrow": 1
+        },
+        "height": null
+      }
+    },
+    "&-flexlayout": {
+      "flexProps": {
+        "flexGrow": 2
+      },
+      "height": null
+    },
+    "&-lbl": {
+      "&-header": {
+        "flexProps": {
+          "alignSelf": "STRETCH"
+        }
+      }
+    }
+  }
+}

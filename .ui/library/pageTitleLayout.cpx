@@ -6,7 +6,9 @@
 			"initialized": true,
 			"props": {
 				"children": [
-					"bc78-f2d3-ac3c-5b22"
+					"39ae-0858-b38f-acab",
+					"bc78-f2d3-ac3c-5b22",
+					"636e-b325-816e-4513"
 				],
 				"name": "pageTitleLayout",
 				"parent": "57f4-201f-4bfc-5fc6"
@@ -15,10 +17,32 @@
 				"page": "__library__"
 			},
 			"type": "FlexLayout",
-			"userProps": {}
+			"userProps": {
+				"flexProps": {},
+				"left": 29.17,
+				"top": 518.06
+			}
 		},
 		{
-			"className": ".sf-imageView .pageTitleLayout-logo",
+			"className": ".sf-label",
+			"id": "39ae-0858-b38f-acab",
+			"oldName": "label1",
+			"props": {
+				"children": [],
+				"name": "lbl1",
+				"parent": "0201-dc86-607b-2891",
+				"text": "Knight"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Knight"
+			}
+		},
+		{
+			"className": ".sf-imageView .app_titlelayout_image",
 			"id": "bc78-f2d3-ac3c-5b22",
 			"props": {
 				"autoHeight": 46.42857142857143,
@@ -33,8 +57,26 @@
 			"type": "ImageView",
 			"userProps": {
 				"autoHeight": 46.42857142857143,
-				"image": "smartface.png",
+				"imageFillType": "ASPECTFIT",
 				"usePageVariable": true
+			}
+		},
+		{
+			"className": ".sf-label",
+			"id": "636e-b325-816e-4513",
+			"oldName": "lbl1_1",
+			"props": {
+				"children": [],
+				"name": "lbl2",
+				"parent": "0201-dc86-607b-2891",
+				"text": "Challenge"
+			},
+			"source": {
+				"page": "__library__"
+			},
+			"type": "Label",
+			"userProps": {
+				"text": "Challenge"
 			}
 		}
 	]

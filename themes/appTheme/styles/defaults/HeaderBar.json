@@ -1,0 +1,7 @@
+{
+    ".sf": {
+        "&-headerBar": {
+            "backgroundColor": "${primary}"
+        }
+    }
+}

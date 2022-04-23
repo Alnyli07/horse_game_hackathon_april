@@ -1,9 +1,9 @@
 {
-  "name": "helloworld-boilerplate-parent",
-  "description": "This is Smartface's helloworld boilerplate project",
+  "name": "horse_game",
+  "description": "Horse game, think, put your strategy and defeat your enemies.",
   "author": {
-    "name": "Smartface",
-    "email": "info@smartface.io",
+    "name": "Ali Tuğrul PINAR",
+    "email": "altgrlpinar@gmail.com",
     "url": "http://smartface.io"
   },
   "private": true,
@@ -11,7 +11,9 @@
     "smartface",
     "javascript",
     "typescript",
-    "boilerplate",
+    "horse",
+    "game",
+    "strategy",
     "mobile",
     "cross-platform",
     "native"
@@ -27,17 +29,17 @@
     "prettier": "prettier --write ."
   },
   "dependencies": {
-    "@smartface/builder": "^0.9.0-rc",
+    "@smartface/builder": "^0.9.0-rc.6",
     "@smartface/marketplace-service": "^1.2.0",
     "cross-env": "^7.0.3",
     "rimraf": "^3.0.2",
-    "typescript": "^4.5.0"
+    "typescript": "^4.6.1"
   },
   "devDependencies": {
     "@smartface/dispatcher": "^0.8.4",
     "@smartface/image-processor": "^1.2.4",
     "@smartface/library-reader": "^0.8.4",
-    "@smartface/tsc-watch": "^0.8.0",
+    "@smartface/tsc-watch": "^0.8.5",
     "@typescript-eslint/eslint-plugin": "^4.26.0",
     "@typescript-eslint/parser": "^4.26.0",
     "eslint": "^7.27.0",

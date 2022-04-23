@@ -1,0 +1,75 @@
+{
+    ".board": {
+        "&_layout": {
+            "&_1": {
+                "height": null,
+                "width": null,
+                "backgroundColor": "${mainLight}",
+                "flexProps": {
+                    "flexGrow": 1
+                }
+            },
+            "&_2": {
+                "height": null,
+                "width": null,
+                "backgroundColor": "${mainDark}",
+                "flexProps": {
+                    "flexGrow": 1
+                }
+            }
+        }
+    },
+    ".app": {
+        "&_titlelayout": {
+            "&_image": {
+                "image": "white_horse_header.png",
+                "imageFillType": "ASPECTFIT",
+                "height": 20,
+                "width": 20,
+                "flexProps": {
+                    "alignSelf": "CENTER"
+                },
+                "marginLeft": 10,
+                "marginRight": 10
+            }
+        },
+        "&_board": {
+            "&_item": {
+                "flexProps": {
+                    "flexGrow": 1,
+                    "alignItems": "CENTER",
+                    "justifyContent": "CENTER"
+                },
+                "height": null,
+                "width": null,
+                "&_image": {
+                    "height": null,
+                    "width": null,
+                    "flexProps": {
+                        "alignSelf": "CENTER"
+                    },
+                    "margin": 10
+                },
+                "&_full": {
+                    "backgroundColor": "${main}"
+                },
+                "&_hint": {
+                    "borderColor": "${hint}",
+                    "borderWidth": 2
+                }
+            },
+            "&_row": {
+                "&_item": {
+                    "&_layout": {
+                        "flexProps": {
+                            "flexGrow": 1,
+                            "flexDirection": "ROW"
+                        },
+                        "height": null,
+                        "width": null
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,7 @@
+{
+    ".sf": {
+        "&-page": {
+            "backgroundColor": "${primaryLight}"
+        }
+    }
+}
